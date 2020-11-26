@@ -2,14 +2,16 @@ package me.jaeyeon23;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
+import org.springframework.validation.annotation.Validated;
 
 @Component
 @ConfigurationProperties("jaeyeon")
+@Validated
 public class JaeyeonProperties {
 
-    String name;
-    int age;
-    String fullName;
+    private String name;
+    private int age;
+    private String fullName;
 
     public String getName() {
         return name;

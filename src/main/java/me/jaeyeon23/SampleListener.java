@@ -1,3 +1,4 @@
+/*
 package me.jaeyeon23;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,7 +15,7 @@ public class SampleListener implements ApplicationListener<ApplicationStartedEve
     @Override
     public void onApplicationEvent(ApplicationStartedEvent applicationStartedEvent) {
         System.out.println("============================");
-        System.out.println(jaeyeonProperties.getFullName());
         System.out.println("============================");
     }
 }
+*/

@@ -1,6 +1,7 @@
 package me.jaeyeon23;
 
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.WebApplicationType;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
@@ -10,7 +11,7 @@ public class Application {
         //SpringApplication.run(Application.class, args);
 
         SpringApplication app = new SpringApplication(Application.class);
-        app.addListeners(new SampleListener());
+        //app.addListeners(new SampleListener());
         /*app.setBanner(new Banner() {
             @Override
             public void printBanner(Environment environment, Class<?> sourceClass, PrintStream out) {
@@ -19,6 +20,7 @@ public class Application {
                 out.println("======================");
             }
         });*/
+        app.setWebApplicationType(WebApplicationType.NONE);
         app.run(args);
 
         /*new SpringApplicationBuilder()
